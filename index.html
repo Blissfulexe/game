@@ -3,10 +3,6 @@
 <head>
 	<title>Zombsroyale?</title>
 	<style>
-		iframe {
-			width: 100vw;
-			height: 100vw;
-		}
 		body{
 			margin: 0px;
 			overflow: hidden;
@@ -15,5 +11,10 @@
 </head>
 <body>
 	<iframe src="https://zombsroyale.io"></iframe>
+	<script>
+	 let iframe = document.querySelector("iframe");
+         iframe.width = innerWidth; // U don't have to call window.innerWIdth;
+	 iframe.height = innerHeight; // JavaScript is too smart for that.
+	</script>
 </body>
 </html>
